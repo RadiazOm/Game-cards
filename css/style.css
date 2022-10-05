@@ -1,0 +1,147 @@
+body {
+    background-color: #2b2929;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: white;
+}
+
+.portal {
+    background-image: url(../img/portal\ 2\ background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.astroneer {
+    background-image: url(../img/astroneer\ wallpaper.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.riskofrain {
+    background-image: url(../img/risk\ of\ rain\ 2\ background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.outerwilds {
+    background-image: url(../img/outer\ wilds\ background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background-color: #060606;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid white;
+}
+
+.link:hover {
+    transition: 0.3s;
+    background-color: transparent;
+    border-bottom: 3px solid #2e206b;
+}
+
+.container {
+    width: 70vw;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.textarea {
+    border-radius: 10px;
+    background-color: #060606;
+    padding: 10px;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+}
+
+
+.cards {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+img {
+    transition: 0.4s;
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+}
+
+section {
+    margin: 10px;
+    max-width: 500px;
+}
+
+.imagelink {
+    display: block;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+.imagelink:hover {
+    cursor: pointer;
+}
+
+
+.card:hover {
+    transition: 0.4s;
+    height: 600px;
+}
+
+@media (max-width: 780px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .imagesection {
+        min-width: 100vw;
+        margin: 0 auto 100px;
+    }
+
+    img {
+        max-width: 100%;
+        width: auto;
+    }
+
+}
