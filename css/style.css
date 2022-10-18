@@ -78,11 +78,14 @@ a {
 }
 
 img {
-    transition: 0.4s;
     width: 100%;
-    height: 500px;
     object-fit: contain;
     border-radius: 10px;
+}
+
+.card {
+    transition: 0.4s;
+    height: 500px;
 }
 
 .logo {
