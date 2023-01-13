@@ -1,5 +1,5 @@
 body {
-    background-color: #2b2929;
+    background-color: #272838;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     color: white;
@@ -29,17 +29,69 @@ body {
     background-size: cover;
 }
 
+.aboutme {
+    background-image: url(../img/pixelMap.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.cle1 {
+    background-image: url(../img/internet-of-things.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
 header {
-    background-color: #060606;
+    background-color: #1b1c24;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url('../img/gamesBackground.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+.hero-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20vh;
+    text-align: center;
+    font-size: 1.7em;
+}
+
 
 nav {
     display: flex;
     flex-direction: row;
     text-align: center;
+}
+
+.scrolled {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in;
 }
 
 a {
@@ -62,19 +114,29 @@ a {
     max-width: fit-content;
 }
 
+.margin-top {
+    margin-top: 20px;
+}
+
 .textarea {
     border-radius: 10px;
-    background-color: #060606;
+    background-color: #272838;
     padding: 10px;
     box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
 }
 
+.title {
+    text-align: center;
+    font-size: 1.7em;
+}
+
 
 .cards {
-    margin-top: 100px;
+    margin-top: 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
+    margin-inline: 20px;
 }
 
 img {
@@ -83,14 +145,25 @@ img {
     border-radius: 10px;
 }
 
+.border-bottom {
+    border-bottom: 2px solid #44455f;
+}
+
+.margin-top-big {
+    margin-top: 400px;
+}
+
 .card {
     transition: 0.4s;
     height: 500px;
+    width: 350px;
+    object-fit: cover;
 }
 
 .logo {
     width: auto;
-    height: 100px;
+    height: 80px;
+    margin: 5px;
 }
 
 section {
@@ -114,7 +187,27 @@ section {
 
 .card:hover {
     transition: 0.4s;
-    height: 600px;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #1b1c24;
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.icons i {
+    margin: 10px;
+    font-size: 1.6em;
 }
 
 @media (max-width: 780px) {
@@ -135,6 +228,7 @@ section {
         justify-content: baseline;
         flex-wrap: nowrap;
         overflow-x: auto;
+        margin-inline: 0;
     }
 
     .imagesection {
